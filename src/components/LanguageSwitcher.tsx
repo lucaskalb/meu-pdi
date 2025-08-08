@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 
@@ -17,8 +17,8 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-lg p-2 shadow-lg">
-      <a class="text-black" href="/api/auth/login">Entrar</a> 
-      <a class="text-black" href="/api/auth/logout">Sair</a>
+      <Link href="/api/auth/login"  locale="false">Entrar</Link> 
+      <Link href="/api/auth/logout" locale="false">Sair</Link>
       <button
         onClick={() => switchLanguage('pt')}
         className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${

@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
-import Link from 'next/link';
 
 export default function Home() {
   const t = useTranslations('welcome');

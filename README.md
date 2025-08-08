@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MeuPDI
 
-## Getting Started
+Um projeto Next.js simples configurado com TypeScript e Tailwind CSS, pronto para deploy na Vercel.
 
-First, run the development server:
+## 🚀 Tecnologias
+
+- **Next.js 15** - Framework React com App Router
+- **TypeScript** - Tipagem estática para JavaScript
+- **Tailwind CSS** - Framework CSS utilitário
+- **ESLint** - Linter para qualidade de código
+
+## 📦 Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone o repositório
+git clone <seu-repositorio>
+
+# Entre no diretório
+cd meu-pdi
+
+# Instale as dependências
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Desenvolvimento
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Inicie o servidor de desenvolvimento
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Abra http://localhost:3000 no seu navegador
+```
 
-## Learn More
+## 🏗️ Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Crie uma build de produção
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Inicie o servidor de produção
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 Scripts Disponíveis
 
-## Deploy on Vercel
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria a build de produção
+- `npm run start` - Inicia o servidor de produção
+- `npm run lint` - Executa o linter
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deploy na Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está configurado para deploy automático na Vercel:
+
+1. Conecte seu repositório GitHub à Vercel
+2. A Vercel detectará automaticamente que é um projeto Next.js
+3. O deploy será feito automaticamente a cada push
+
+## 📁 Estrutura do Projeto
+
+```
+meu-pdi/
+├── src/
+│   └── app/
+│       ├── page.tsx      # Página principal
+│       ├── layout.tsx    # Layout raiz
+│       └── globals.css   # Estilos globais
+├── public/               # Arquivos estáticos
+├── package.json
+└── README.md
+```
+
+## 🎨 Personalização
+
+Para começar a desenvolver:
+
+1. Edite `src/app/page.tsx` para modificar a página principal
+2. Modifique `src/app/layout.tsx` para alterar o layout global
+3. Adicione novos componentes em `src/app/`
+4. Configure o Tailwind CSS em `tailwind.config.ts`
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.

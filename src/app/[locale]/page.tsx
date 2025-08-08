@@ -1,13 +1,14 @@
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import Link from 'next/link';
 
 export default function Home() {
   const t = useTranslations('welcome');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center relative">
-      {/* Language Switcher positioned in top-right */}
       <div className="absolute top-4 right-4">
+
         <LanguageSwitcher />
       </div>
       
@@ -28,6 +29,7 @@ export default function Home() {
           <p className="text-gray-500">
             {t('features.edit', { file: 'src/app/[locale]/page.tsx' })}
           </p>
+
         </div>
       </div>
     </div>

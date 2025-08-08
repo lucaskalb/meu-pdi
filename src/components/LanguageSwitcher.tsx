@@ -3,6 +3,7 @@
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 
+
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
@@ -16,6 +17,8 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-lg p-2 shadow-lg">
+      <a class="text-black" href="/api/auth/login">Entrar</a> 
+      <a class="text-black" href="/api/auth/logout">Sair</a>
       <button
         onClick={() => switchLanguage('pt')}
         className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
@@ -24,7 +27,7 @@ export default function LanguageSwitcher() {
             : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
         }`}
       >
-        🇧🇷 PT
+        PT
       </button>
       <button
         onClick={() => switchLanguage('en')}
@@ -34,7 +37,7 @@ export default function LanguageSwitcher() {
             : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
         }`}
       >
-        🇺🇸 EN
+        EN
       </button>
     </div>
   );

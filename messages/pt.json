@@ -1,0 +1,21 @@
+{
+  "welcome": {
+    "title": "Bem-vindo ao MeuPDI",
+    "subtitle": "Seu projeto Next.js está pronto para começar!",
+    "features": {
+      "typescript": "✨ Configurado com TypeScript e Tailwind CSS",
+      "vercel": "🚀 Pronto para deploy na Vercel",
+      "edit": "📝 Comece editando {file}"
+    }
+  },
+  "navigation": {
+    "home": "Início",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "common": {
+    "language": "Idioma",
+    "theme": "Tema",
+    "loading": "Carregando..."
+  }
+} 

@@ -1,0 +1,21 @@
+{
+  "welcome": {
+    "title": "Welcome to MeuPDI",
+    "subtitle": "Your Next.js project is ready to start!",
+    "features": {
+      "typescript": "✨ Configured with TypeScript and Tailwind CSS",
+      "vercel": "🚀 Ready for Vercel deployment",
+      "edit": "📝 Start by editing {file}"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "common": {
+    "language": "Language",
+    "theme": "Theme",
+    "loading": "Loading..."
+  }
+} 
